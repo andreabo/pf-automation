@@ -1,0 +1,30 @@
+request:
+url: /abc
+get:
+  headers:
+    headerOne: "${headerOne}"
+    headerTwo: "${headerTwo}"
+    headerThree: value
+  params:
+    x: "${x}"
+    y: "${y}"
+    z: "${z}"
+post:
+  headers:
+    headerOne: "${headerOne}"
+    headerTwo: "${headerTwo}"
+    headerThree: value
+    Content-Type: application/json
+  body:
+    {
+      "debtor_email": "debotr@debtor.com",
+      "assignee_id": "ec735683-04ef-4c4b-9fb9-e6a28755b1ad"
+    }
+
+
+#  get1:
+#    headers:
+#      headerOne: "${headerOne}"
+#      headerTwo: "${headerTwo}"
+#      headerThree: value
+#
