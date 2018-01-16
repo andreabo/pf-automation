@@ -1,12 +1,10 @@
 package com.request.template.domain;
 
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.JsonNode;
 
 public class Post extends Method {
 
-    public final String NAME = "POST";
+    final String NAME = "POST";
 
     private JsonNode body;
 

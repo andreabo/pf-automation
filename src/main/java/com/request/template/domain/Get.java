@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class Get extends Method {
 
-    private final String NAME = "GET";
+    public static final String NAME = "GET";
     private Map<String, String> params;
 
     public Get() {

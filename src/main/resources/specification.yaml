@@ -1,30 +1,38 @@
-request:
-url: /abc
-get:
-  headers:
-    headerOne: "${headerOne}"
-    headerTwo: "${headerTwo}"
-    headerThree: value
-  params:
-    x: "${x}"
-    y: "${y}"
-    z: "${z}"
-post:
-  headers:
-    headerOne: "${headerOne}"
-    headerTwo: "${headerTwo}"
-    headerThree: value
-    Content-Type: application/json
-  body:
-    {
-      "debtor_email": "debotr@debtor.com",
-      "assignee_id": "ec735683-04ef-4c4b-9fb9-e6a28755b1ad"
-    }
-
-
-#  get1:
-#    headers:
-#      headerOne: "${headerOne}"
-#      headerTwo: "${headerTwo}"
-#      headerThree: value
-#
+name: offers
+requests:
+  -
+    url: /factoring/offers_batches
+    get:
+      headers:
+        pf-tenant-id: "${pf-tenant-id}"
+        pf-financial-insitution-id: "${pf-financial-insitution-id}"
+        Content-Type: application/json
+  -
+    url: /factoring
+    get:
+      headers:
+        pf-tenant-id: "${pf-tenant-id}"
+        pf-financial-insitution-id: "${pf-financial-insitution-id}"
+        Content-Type: application/json
+#    post:
+#      headers:
+#        headerOne: "${headerOne}"
+#        headerTwo: "${headerTwo}"
+#        headerThree: value
+#        Content-Type: application/json
+#      body:
+#        {
+#          "debtor_email": "debotr@debtor.com",
+#          "assignee_id": "ec735683-04ef-4c4b-9fb9-e6a28755b1ad"
+#        }
+#  -
+#    url: /offers_batches
+#    get:
+#      headers:
+#        pf-tenant-id: "${pf-tenant-id}"
+#        pf-financial-insitution-id: "${pf-financial-insitution-id}"
+#        Content-Type: application/json
+#      params:
+#        x: "${x}"
+#        y: "${y}"
+#        z: "${z}"

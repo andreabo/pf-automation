@@ -1,17 +1,13 @@
 package com.request.template.domain;
 
-import java.util.List;
-import java.util.Map;
-
 public class Request {
 
     private String url;
     private Get get;
     private Post post;
 
-    public Request() {}
-
-    public Request(String methodName) {}
+    public Request() {
+    }
 
     public String getUrl() {
         return url;
@@ -20,6 +16,7 @@ public class Request {
     public void setUrl(String url) {
         this.url = url;
     }
+
 
     public Get getGet() {
         return get;
@@ -37,6 +34,7 @@ public class Request {
         this.post = post;
     }
 
+
     @Override
     public String toString() {
         return "Request{" +
@@ -45,4 +43,6 @@ public class Request {
                 ", post=" + post +
                 '}';
     }
+
+
 }

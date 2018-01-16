@@ -3,7 +3,7 @@ package com.request.template.domain;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Method {
+public abstract class Method {
 
     protected Map<String, String> headers;
 
@@ -18,5 +18,4 @@ public class Method {
     public void setHeaders(Map<String, String> headers) {
         this.headers = headers;
     }
-
 }
